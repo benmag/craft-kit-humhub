@@ -1,12 +1,12 @@
 # Craft Kit - HumHub
 This craft kit is for HumHub - the flexible open source social network kit. 
 ```
-$ mason craft benmag/humhub
+$ mason craft benmag/craft-kit-humhub
 ```
 
-> Craft kits let you Dockerize your application with one command. They are an excellent way to ease into building Docker powered apps without having to learn the ins and outs of Docker.
+Craft kits let you Dockerize your application with one command. They are an excellent way to ease into building Docker powered apps without having to learn the ins and outs of Docker.
 
-> Then with [Codemason](http://mason.ci), you can deploy your app to a server in a matter of minutes!
+Then with [Codemason](http://mason.ci), you can deploy your app to a server in a matter of minutes!
 
 ## Requirements 
 > This guide assumes you have:
@@ -31,7 +31,7 @@ $ git clone https://github.com/humhub/humhub.git
 
 Craft your HumHub app with Docker. Make sure you set your `GITHUB_TOKEN` as explained in the Configruation section of this README.
 ```
-$ mason craft benmag/humhub
+$ mason craft benmag/craft-kit-humhub
 ```
 
 Add your Docker files to source control.
