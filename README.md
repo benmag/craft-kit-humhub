@@ -9,19 +9,8 @@ Craft kits let you Dockerize your application with one command. They are an exce
 Then with [Codemason](http://mason.ci), you can deploy your app to a server in a matter of minutes!
 
 ## Requirements 
-> This guide assumes you have:
-> - Installed the [Mason CLI](http://mason.ci/docs/installation)
-
-## Configuration
-Generate a GitHub Personal Access Token for Composer 
-```
-https://github.com/settings/tokens/new?scopes=repo&description=Composer
-```
-
-Set the token as an environment variable for `app` in your new `docker-compose.yml` file
-```
-GITHUB_TOKEN=xxxxxxxxxxxxxxxxxxxxx
-```
+This guide assumes you have:
+- Installed the [Mason CLI](http://mason.ci/docs/installation)
 
 ## Quickstart
 Clone HumHub
@@ -34,15 +23,25 @@ Craft your HumHub app with Docker. Make sure you set your `GITHUB_TOKEN` as expl
 $ mason craft benmag/craft-kit-humhub
 ```
 
+Generate a GitHub Personal Access Token for Composer 
+```
+https://github.com/settings/tokens/new?scopes=repo&description=Composer
+```
+
+Then set the token as environment variable for `app` in your new `Dockerfile`
+```
+ENV GITHUB_TOKEN xxxxxxxxxxxxxxxxxxxxx
+```
+
 Add your Docker files to source control.
 ```
 $ git add .
 $ git commit -m "Docker"
 ```
 
-Spin up your development environment with Docker (add the `-d` flag to the command to run in detached mode)
+Spin up your development environment with Docker (use the `-d` flag to the command to run in detached mode)
 ``` 
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 Install composer dependencies for local development. 
