@@ -49,6 +49,8 @@ Install composer dependencies for local development.
 $ docker-compose run --rm app composer install
 ```
 
+> NOTE: It will take time for all the dependencies to install. If you have `composer` installed locally, run `composer install` locally as it will be faster.
+
 That's all! You're now running your HumHub application with Docker!
 
 You'll be able to access your application at http://<docker-ip>, where <docker-ip> is the boot2docker ip or localhost if you are running Docker natively.
